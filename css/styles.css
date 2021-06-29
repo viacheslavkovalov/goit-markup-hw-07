@@ -103,8 +103,8 @@ ul {
   font-style: normal;
 }
 
-.site-nav-link,
-.info-link {
+.site-nav__link,
+.info-nav__link {
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
@@ -117,24 +117,18 @@ ul {
   transition: color var(--transition-duration) var(--timing-function);
 }
 
-.site-nav-link:hover,
-.info-link:hover,
+.site-nav__link:hover,
+.info-nav__link:hover,
 .address-link:hover,
-.site-nav-link:focus,
-.info-link:focus,
+.site-nav__link:focus,
+.info-nav__link:focus,
 .address-link:focus {
   color: var(--accent-color);
 }
-.site-nav-link.current {
-  color: var(--accent-color);
-}
 
-.info-link {
-  color: var(--primary-text-color);
-}
 /* cтили ссылок */
 /* лого */
-.logo-link {
+.page-header__logo {
   text-decoration: none;
   font-style: normal;
   color: var(--logo-color);
@@ -143,7 +137,7 @@ ul {
   font-size: var(--logo-font-size);
   line-height: 1.192;
 }
-.logo-web {
+.page-header__logo-forepart {
   color: var(--accent-color);
 }
 /* лого */
@@ -220,7 +214,7 @@ ul {
 }
 
 /* Header */
-.header {
+.page-header {
   display: flex;
   height: 80px;
   border-bottom: 1px solid #ececec;
@@ -231,12 +225,12 @@ ul {
   align-items: center;
 }
 
-.info {
+.info-nav {
   display: flex;
   margin-left: auto;
 }
 
-.main-nav {
+.page-header__nav {
   display: flex;
   align-items: center;
 }
@@ -244,34 +238,34 @@ ul {
   display: flex;
   margin-left: 93px;
 }
-.site-nav .item:not(:last-child),
-.info .item:not(:last-child) {
+.site-nav__item:not(:last-child),
+.info-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.item .info-link {
+.info-nav__link {
   display: flex;
   align-items: center;
+
+  color: var(--primary-text-color);
 }
 
-.envelope-icon,
-.icon-phone {
+.info-nav__icon {
   fill: currentColor;
   margin-right: 10px;
 }
 
-.item .info-link:hover .envelope-icon,
-.item .info-link:hover .icon-phone,
-.item .info-link:focus .envelope-icon,
-.item .info-link:focus .icon-phone {
+.info-nav__link:hover .info-nav__icon,
+.info-nav__link:focus .info-nav__icon {
   fill: currentColor;
 }
 
-.site-nav-link.current {
+.site-nav__link--current {
   position: relative;
+  color: var(--accent-color);
 }
 
-.site-nav-link.current::after {
+.site-nav__link--current::after {
   position: absolute;
   display: block;
   left: 0;
