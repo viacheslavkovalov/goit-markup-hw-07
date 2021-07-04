@@ -1,0 +1,20 @@
+.title {
+  font-weight: $title-font-weight;
+  font-size: $title-font-size;
+  color: $title-text-color;
+  text-align: center;
+  line-height: 1.167;
+  margin-bottom: 50px;
+}
+
+.card {
+  line-height: 1.188;
+}
+
+.thumb {
+  @extend %flex-center;
+}
+
+.nav {
+  @extend %flex-align-center;
+}

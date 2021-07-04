@@ -1,0 +1,12 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &--no-pading-top {
+    padding-top: 0;
+  }
+
+  &--secondary-bg-color {
+    background-color: $secondary-bg-color;
+  }
+}
