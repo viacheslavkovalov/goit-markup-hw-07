@@ -48,16 +48,15 @@
   background-color: $primary-white-color;
   cursor: pointer;
 
-  &__icon {
-    width: 11px;
-    height: 11px;
-    fill: $logo-color;
-
-    transition: fill $timing-function $transition-duration;
-  }
-
-  &:hover &__icon,
-  &:focus &__icon {
+  &:hover,
+  &:focus .button--close__icon {
     fill: $accent-color;
   }
+}
+.button--close__icon {
+  width: 11px;
+  height: 11px;
+  fill: $logo-color;
+
+  transition: fill $timing-function $transition-duration;
 }

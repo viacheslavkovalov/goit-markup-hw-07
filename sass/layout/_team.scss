@@ -2,7 +2,7 @@
   @extend %flexed-margin;
 }
 
-.team-card {
+.team-list__item {
   margin-right: 30px;
   background-color: $primary-white-color;
   text-align: center;
@@ -16,17 +16,16 @@
 .team-member {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.team-member__name {
+  color: $title-text-color;
+  font-weight: $nav-font-weight;
+  font-size: $button-font-size;
+}
 
-  &__name {
-    color: $title-text-color;
-    font-weight: $nav-font-weight;
-    font-size: $button-font-size;
-  }
-
-  &__position {
-    margin-top: 10px;
-    font-size: $button-font-size;
-  }
+.team-member__position {
+  margin-top: 10px;
+  font-size: $button-font-size;
 }
 
 .socials {
@@ -36,28 +35,28 @@
   margin-right: -10px;
 }
 
-.socials-item {
+.socials__item {
   margin-right: 10px;
+}
 
-  &__link {
-    @extend %flex-center;
-    padding: 12px;
-    border-radius: 50%;
-    transition: background-color $timing-function $transition-duration;
+.socials__link {
+  @extend %flex-center;
+  padding: 12px;
+  border-radius: 50%;
+  transition: background-color $timing-function $transition-duration;
 
-    &:hover,
-    &:focus {
-      background-color: $accent-color;
-      .socials-item__logo {
-        fill: $primary-white-color;
-      }
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    .socials__logo {
+      fill: $primary-white-color;
     }
   }
+}
 
-  &__logo {
-    width: 20px;
-    height: 20px;
-    fill: $social-link-color;
-    transition: fill $transition-duration $timing-function;
-  }
+.socials__logo {
+  width: 20px;
+  height: 20px;
+  fill: $social-link-color;
+  transition: fill $transition-duration $timing-function;
 }

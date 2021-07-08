@@ -2,25 +2,25 @@
   @extend %flexed-margin;
 }
 
-.profile-card {
+.profile-list__item {
   position: relative;
   margin-right: 30px;
+}
 
-  &__overlay {
-    display: inline-block;
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(47, 48, 58, 0.8);
-  }
+.profile-list__overlay {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+}
 
-  &__title {
-    padding-top: 27px;
-    padding-bottom: 27px;
-    text-align: center;
-    color: $primary-white-color;
-    text-transform: uppercase;
-  }
+.profile-list__title {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+  color: $primary-white-color;
+  text-transform: uppercase;
 }

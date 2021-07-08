@@ -33,12 +33,12 @@ ul {
   list-style: none;
 }
 
-.info-nav__link, .site-nav__link, .nav__logo, .product__link {
+a {
   text-decoration: none;
   font-style: normal;
 }
 
-.thumb, .button--close, .socials-item__link, .clients-item__link, .social-footer-item__link, .subscribe-button {
+.thumb, .button--close, .socials__link, .clients-list__link, .social-footer-item__link, .subscribe-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,21 +117,35 @@ ul {
   background-color: #f5f4fa;
 }
 
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.title {
+.section__title {
   font-weight: 700;
   font-size: 36px;
   color: #212121;
   text-align: center;
   line-height: 1.167;
   margin-bottom: 50px;
+}
+
+.section__title--hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .card {
@@ -300,17 +314,17 @@ ul {
   cursor: pointer;
 }
 
+.button--close:hover,
+.button--close:focus .button--close__icon {
+  fill: #2196f3;
+}
+
 .button--close__icon {
   width: 11px;
   height: 11px;
   fill: #000000;
   -webkit-transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
-
-.button--close:hover .button--close__icon,
-.button--close:focus .button--close__icon {
-  fill: #2196f3;
 }
 
 .form {
@@ -582,12 +596,12 @@ ul {
   line-height: 1.7142;
 }
 
-.profile-card {
+.profile-list__item {
   position: relative;
   margin-right: 30px;
 }
 
-.profile-card__overlay {
+.profile-list__overlay {
   display: inline-block;
   content: "";
   position: absolute;
@@ -597,7 +611,7 @@ ul {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.profile-card__title {
+.profile-list__title {
   padding-top: 27px;
   padding-bottom: 27px;
   text-align: center;
@@ -605,7 +619,7 @@ ul {
   text-transform: uppercase;
 }
 
-.team-card {
+.team-list__item {
   margin-right: 30px;
   background-color: #fff;
   text-align: center;
@@ -643,26 +657,26 @@ ul {
   margin-right: -10px;
 }
 
-.socials-item {
+.socials__item {
   margin-right: 10px;
 }
 
-.socials-item__link {
+.socials__link {
   padding: 12px;
   border-radius: 50%;
   -webkit-transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.socials-item__link:hover, .socials-item__link:focus {
+.socials__link:hover, .socials__link:focus {
   background-color: #2196f3;
 }
 
-.socials-item__link:hover .socials-item__logo, .socials-item__link:focus .socials-item__logo {
+.socials__link:hover .socials__logo, .socials__link:focus .socials__logo {
   fill: #fff;
 }
 
-.socials-item__logo {
+.socials__logo {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
@@ -670,11 +684,11 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-item {
+.clients-list__item {
   margin-right: 30px;
 }
 
-.clients-item__link {
+.clients-list__link {
   padding: 15px 31px;
   border-radius: 4px;
   border: 1px solid #afb1b8;
@@ -682,15 +696,15 @@ ul {
   transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.clients-item__link:hover, .clients-item__link:focus {
+.clients-list__link:hover, .clients-list__link:focus {
   border-color: #2196f3;
 }
 
-.clients-item__link:hover .clients-item__logo, .clients-item__link:focus .clients-item__logo {
+.clients-list__link:hover .clients-list__logo, .clients-list__link:focus .clients-list__logo {
   fill: #2196f3;
 }
 
-.clients-item__logo {
+.clients-list__logo {
   fill: #afb1b8;
   width: 106px;
   height: 60px;

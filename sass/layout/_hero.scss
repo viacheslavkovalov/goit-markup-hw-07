@@ -13,13 +13,12 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-
-  &__title {
-    font-weight: $hero-font-weight;
-    font-size: $hero-font-size;
-    line-height: 1.364;
-    color: $primary-white-color;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-  }
+}
+.hero__title {
+  font-weight: $hero-font-weight;
+  font-size: $hero-font-size;
+  line-height: 1.364;
+  color: $primary-white-color;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }

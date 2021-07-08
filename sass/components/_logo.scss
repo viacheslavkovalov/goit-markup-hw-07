@@ -1,6 +1,5 @@
 .nav__logo {
   display: flex;
-  @extend %link;
   color: $logo-color;
   font-family: "raleway";
   font-weight: $title-font-weight;
